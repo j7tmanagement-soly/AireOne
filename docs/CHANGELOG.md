@@ -31,6 +31,7 @@
 * Next.js 14 project scaffolding (in progress)
 
 cat > /home/claude/AireOne/AireOne/docs/CHANGELOG.md << 'EOF'
+
 * \# Changelog
 * 
 * \## \[0.2.0] — Session 2
@@ -40,16 +41,16 @@ cat > /home/claude/AireOne/AireOne/docs/CHANGELOG.md << 'EOF'
 * \*\*API Routes\*\*
 * \- `GET /api/articles` — list articles with filters (categoryId, status, type, search, take, skip)
 * \- `POST /api/articles` — create article with auto slug generation and audit log
-* \- `GET /api/articles/\[id]` — fetch article, increment view count, upsert read record
-* \- `PATCH /api/articles/\[id]` — update article fields, auto-set publishedAt on publish
-* \- `DELETE /api/articles/\[id]` — soft archive (sets status → ARCHIVED)
+* \- `GET /api/articles/\\\[id]` — fetch article, increment view count, upsert read record
+* \- `PATCH /api/articles/\\\[id]` — update article fields, auto-set publishedAt on publish
+* \- `DELETE /api/articles/\\\[id]` — soft archive (sets status → ARCHIVED)
 * \- `GET /api/acknowledgements` — check if user has acked content
 * \- `POST /api/acknowledgements` — submit digital signature ack (validates name, records IP/UA)
 * 
 * \*\*Pages\*\*
-* \- `/bible/category/\[slug]` — category page with articles grouped by type (Article/SOP/Policy/Incident Guide), draft indicator for admins, empty state with create prompt
-* \- `/bible/\[slug]` — article reader with read tracking, breadcrumb, related articles sidebar, admin edit/archive actions, acknowledgement block
-* \- `/bible/\[slug]/edit` — edit page for admins, pre-populates editor with existing data
+* \- `/bible/category/\\\[slug]` — category page with articles grouped by type (Article/SOP/Policy/Incident Guide), draft indicator for admins, empty state with create prompt
+* \- `/bible/\\\[slug]` — article reader with read tracking, breadcrumb, related articles sidebar, admin edit/archive actions, acknowledgement block
+* \- `/bible/\\\[slug]/edit` — edit page for admins, pre-populates editor with existing data
 * \- `/bible/new` — new article page, supports `?category=id` pre-selection
 * 
 * \*\*Components\*\*
